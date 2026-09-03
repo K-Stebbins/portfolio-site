@@ -53,39 +53,121 @@
       <h1 class="section-heading project-detail-title">Concrete Cylinder Compression Lab</h1>
       <p class="project-meta project-detail-meta">EGN-301, UNCW, Spring 2026</p>
 
-      <div class="project-detail-media">
-        <!--
-          PLACEHOLDER: Concrete Cylinder Compression Lab media.
-          Replace this placeholder block with your real test photo and
-          stress-strain chart. Suggested filenames:
-            assets/images/concrete-cylinder-test.jpg
-            assets/images/concrete-stress-strain-chart.png
-          Example markup once you have the files:
-            <img src="assets/images/concrete-cylinder-test.jpg"
-                 alt="Concrete cylinder specimen loaded in the Universal Testing Machine before failure">
-            <img src="assets/images/concrete-stress-strain-chart.png"
-                 alt="Stress-strain chart derived from the concrete cylinder compression test data">
-        -->
-        <img src="assets/images/concrete-cylinder-test.jpg"
-             alt="Placeholder for concrete cylinder compression test photo — replace with the real Universal Testing Machine test image"
-             class="project-img-placeholder"
-             onerror="this.parentElement.classList.add('media-fallback')">
-      </div>
+      <p class="report-byline">Keller Stebbins and Mckinsey Burt — EGN-301 — 04/24/2026</p>
 
       <div class="project-detail-body">
+
         <section class="project-detail-section">
-          <h2>Overview</h2>
-          <p>I tested a concrete cylinder to failure on a Universal Testing Machine (UTM) to determine its compressive strength, Young's modulus, and lateral deflection, then compared the experimental results to theoretical values to trace down sources of error.</p>
+          <h2>1. Introduction</h2>
+          <p>The purpose of this experiment was to analyze the compressive behavior of a concrete cylinder using a Universal Testing Machine (UTM). The test measured the maximum load the specimen could withstand before failure, as well as its stress and deformation characteristics. Using the collected data, critical load, Young's modulus, maximum stress, and lateral deflection were found. Young's modulus was compared to typical values for concrete. This experiment helps demonstrate how materials behave under compressive loading and highlights factors that influence structural performance.</p>
         </section>
 
         <section class="project-detail-section">
-          <h2>Methodology</h2>
-          <p>The cylinder was loaded in compression on the UTM while load and displacement data were recorded and exported for analysis. I processed the load-displacement data in Excel to calculate the stress-strain relationship and identify the elastic, yield, and ultimate stress regions.</p>
+          <h2>2. Procedures</h2>
+          <p>Using concrete cylinder number 7 the diameter and length were measured before testing. The specimen was positioned vertically in the Universal Testing Machine (UTM), making sure it was aligned correctly with the compression plates.</p>
+          <p>The lab technician input the cylinder's dimensions into the UTM software, and safety goggles were put on before starting the test. The concrete cylinder we tested is pictured in Figure 1 in its position prior to running the UTM.</p>
+
+          <figure class="report-figure">
+            <img src="assets/images/concrete-cylinder-test.jpg" alt="Concrete cylinder 7 positioned in the Universal Testing Machine before compression testing" onerror="this.closest('.report-figure').classList.add('media-fallback')">
+            <figcaption>Figure 1. Concrete cylinder 7 in the UTM.</figcaption>
+          </figure>
+
+          <p>The machine gradually applied a compressive load until the cylinder broke. Observations were noted during the test, and photos were taken both before and after the failure. The data collected was exported as a CSV file for further analysis.</p>
+
+          <h3>2.1 Safety Precautions</h3>
+          <p>Safety precautions were followed while operating the Universal Testing Machine (UTM). Safety glasses were worn at all times to protect against potential debris from the cylinder during the compression test. Hands and loose clothing were kept clear of moving components, and only the machine operator controlled the equipment during testing.</p>
         </section>
 
         <section class="project-detail-section">
-          <h2>Results &amp; Discussion</h2>
-          <p>The experimental Young's modulus fell short of theoretical concrete values. I traced the gap to the specimen's short 7-day curing time and its alignment in the test rig.</p>
+          <h2>3. Results and Discussion</h2>
+          <p>The concrete cylinder was 4.034 inches in length, with a cross-sectional area of 1.023 in&sup2;. Strain was calculated by dividing displacement by the original length of the specimen. To get stress, force in pounds was divided by the cross-sectional area.</p>
+          <p>Average stress was then calculated in Excel, subtracting two points in the elastic range. That was then repeated for strain. The stress&ndash;strain relationship for the specimen is illustrated in Figure 2, showing the elastic region, yield point, and ultimate stress. Those values were then used to calculate Young's modulus by dividing stress by strain to get 903.8 psi.</p>
+
+          <figure class="report-figure">
+            <img src="assets/images/stress-strain-chart.png" alt="Stress-strain curve for concrete cylinder 7, showing the elastic region, yield point, and ultimate stress" onerror="this.closest('.report-figure').classList.add('media-fallback')">
+            <figcaption>Figure 2. Stress&ndash;strain curve for concrete cylinder 7 obtained from the test.</figcaption>
+          </figure>
+
+          <p>The maximum load (P<sub>cr</sub>) was found using the formula P<sub>cr</sub> = &pi;&sup2;EI/L&sup2;. When I = &pi;R&#8308;&frasl;4 and R = &radic;(1.023&frasl;&pi;), this gives I = 0.0834 in&#8308; and P<sub>cr</sub> = 45.65 lb.</p>
+          <p>The maximum stress was calculated using the highest recorded load of 395.4 lb / 1.023 in&sup2; to get 386.5 psi.</p>
+          <p>The maximum lateral deflection of the cylinder, assuming Poisson's ratio for concrete, &nu; = 0.1, was found using the diameter times the max axial deflection (P<sub>cr</sub>&frasl;E). Putting these equations together, the maximum lateral deflection is 0.0428 in.</p>
+
+          <h3>Key Results</h3>
+          <div class="report-stats">
+            <div class="report-stat">
+              <span class="report-stat-value">903.8 psi</span>
+              <span class="report-stat-label">Young's Modulus (E)</span>
+            </div>
+            <div class="report-stat">
+              <span class="report-stat-value">386.5 psi</span>
+              <span class="report-stat-label">Max Stress</span>
+            </div>
+            <div class="report-stat">
+              <span class="report-stat-value">45.65 lb</span>
+              <span class="report-stat-label">Critical Load (P<sub>cr</sub>)</span>
+            </div>
+            <div class="report-stat">
+              <span class="report-stat-value">0.0428 in</span>
+              <span class="report-stat-label">Max Lateral Deflection</span>
+            </div>
+            <div class="report-stat">
+              <span class="report-stat-value">4.034 in</span>
+              <span class="report-stat-label">Specimen Length</span>
+            </div>
+            <div class="report-stat">
+              <span class="report-stat-value">1.023 in&sup2;</span>
+              <span class="report-stat-label">Cross-Sectional Area</span>
+            </div>
+          </div>
+
+          <h3>Table 1. Reduced Test Data</h3>
+          <div class="report-table-wrap">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th>Time (s)</th>
+                  <th>Load (lbf)</th>
+                  <th>Position (in)</th>
+                  <th>Stress (psi)</th>
+                  <th>Strain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>&minus;1.87</td><td>&minus;0.0046</td><td>0.46</td><td>0.0045</td></tr>
+                <tr><td>2</td><td>&minus;7.36</td><td>&minus;0.0177</td><td>1.82</td><td>0.0173</td></tr>
+                <tr><td>3</td><td>&minus;16.39</td><td>&minus;0.0344</td><td>4.06</td><td>0.0336</td></tr>
+                <tr><td>4</td><td>&minus;29.54</td><td>&minus;0.0511</td><td>7.32</td><td>0.0499</td></tr>
+                <tr><td>5</td><td>&minus;51.83</td><td>&minus;0.0677</td><td>12.85</td><td>0.0662</td></tr>
+                <tr><td>6</td><td>&minus;90.69</td><td>&minus;0.0844</td><td>22.48</td><td>0.0825</td></tr>
+                <tr><td>7</td><td>&minus;146.61</td><td>&minus;0.1010</td><td>36.34</td><td>0.0987</td></tr>
+                <tr><td>8</td><td>&minus;200.86</td><td>&minus;0.1176</td><td>49.79</td><td>0.1150</td></tr>
+                <tr><td>9</td><td>&minus;257.92</td><td>&minus;0.1343</td><td>63.94</td><td>0.1313</td></tr>
+                <tr><td>10</td><td>&minus;338.32</td><td>&minus;0.1509</td><td>83.87</td><td>0.1475</td></tr>
+                <tr><td>11</td><td>&minus;355.63</td><td>&minus;0.1676</td><td>88.16</td><td>0.1638</td></tr>
+                <tr><td>12</td><td>&minus;167.76</td><td>&minus;0.1843</td><td>41.59</td><td>0.1802</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The concrete cylinder we used was poured on April 8 and tested on April 15, meaning it had approximately 7 days of curing time, whereas concrete takes roughly 28 days to gain its full strength. Due to our concrete cylinder being only one week old and being small to work in the UTM, the calculated Young's modulus of 903.8 psi is weak compared to where it should be. The expected Young's modulus for concrete is around 3.6 &times; 10&#8310; psi. Our concrete cylinder also had some noticeable air pockets from when it was poured, which can also cause it to be weaker. When breaking, our cylinder crumbled into a cone-shaped pattern with a slight point at the top.</p>
+        </section>
+
+        <section class="project-detail-section">
+          <h2>4. Potential Errors</h2>
+          <p><strong>Mechanical error</strong> &mdash; The UTM had a wooden block used to get the cylinder to fit in the machine. This wooden block is less dense than the metal machine, which could be why the side of the cylinder on the metal crumpled while the side on the wood stayed intact.</p>
+          <p><strong>Measurements</strong> &mdash; One possible error is having incorrect measurements for the cross-sectional area. If these numbers are off by even 0.001 inches, the modulus of elasticity changes drastically.</p>
+        </section>
+
+        <section class="project-detail-section">
+          <h2>5. Conclusion</h2>
+          <p>The purpose of this experiment was to evaluate the compressive behavior of a concrete cylinder using a Universal Testing Machine. The maximum load, stress, and deformation characteristics were successfully determined.</p>
+          <p>The experimental Young's Modulus was significantly lower than expected values for concrete, likely due to measurement inaccuracies, improper alignment, and the young curing age of the specimen. The cylinder exhibited brittle failure, which is typical for concrete under compression.</p>
+          <p>Overall, this experiment demonstrated the challenges of accurately measuring material properties and highlighted the importance of proper setup and data analysis.</p>
+        </section>
+
+        <section class="project-detail-section">
+          <h2>6. References</h2>
+          <p><a href="https://www.engineeringtoolbox.com/concrete-properties-d_1223.html" target="_blank" rel="noopener noreferrer">engineeringtoolbox.com &mdash; Concrete Properties</a></p>
         </section>
 
         <ul class="project-tags project-detail-tags">
