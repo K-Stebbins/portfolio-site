@@ -88,7 +88,12 @@
           </svg>
           <span class="feature-number">02</span>
           <h3 class="feature-title">Software &amp; Skills</h3>
-          <p class="feature-copy">AutoCAD, Civil 3D, and ArcGIS Pro for design and mapping; Excel and MATLAB for data analysis; strong technical communication and team collaboration skills.</p>
+          <ul class="feature-list">
+            <li><strong>Civil 3D</strong> &mdash; built the site map, surface models, and cut/fill volume analysis for the beach nourishment project.</li>
+            <li><strong>AutoCAD</strong> &mdash; drafted site design and detailing for the beach nourishment project.</li>
+            <li><strong>ArcGIS Pro</strong> &mdash; <!-- TODO: what have you built/mapped with this? -->[describe a project or task].</li>
+            <li><strong>MATLAB</strong> &mdash; <!-- TODO: what have you built/analyzed with this? -->[describe a project or task].</li>
+          </ul>
         </div>
 
         <div class="feature-card">
@@ -97,7 +102,10 @@
           </svg>
           <span class="feature-number">03</span>
           <h3 class="feature-title">Involvement</h3>
-          <p class="feature-copy">Member of the American Shore &amp; Beach Preservation Association (national and UNCW chapter) and The Society for Collegiate Leadership &amp; Achievement.</p>
+          <ul class="feature-list">
+            <li><strong>American Shore &amp; Beach Preservation Association</strong> (national and UNCW chapter) &mdash; member since fall 2025; attend chapter talks on coastal resilience and beach nourishment.</li>
+            <li><strong>Society for Collegiate Leadership &amp; Achievement</strong> &mdash; <!-- TODO: e.g. leadership development programming, service projects, officer role -->[describe your role/activity].</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -114,27 +122,14 @@
         <!-- Project 1 -->
         <article class="project-card">
           <div class="project-media">
-            <!--
-              PLACEHOLDER: Concrete Cylinder Compression Lab media.
-              Replace this placeholder block with your real test photo and
-              stress-strain chart. Suggested filenames:
-                assets/images/concrete-cylinder-test.jpg
-                assets/images/concrete-stress-strain-chart.png
-              Example markup once you have the files:
-                <img src="assets/images/concrete-cylinder-test.jpg"
-                     alt="Concrete cylinder specimen loaded in the Universal Testing Machine before failure">
-                <img src="assets/images/concrete-stress-strain-chart.png"
-                     alt="Stress-strain chart derived from the concrete cylinder compression test data">
-            -->
             <img src="assets/images/concrete-cylinder-test.jpg"
-                 alt="Placeholder for concrete cylinder compression test photo — replace with the real Universal Testing Machine test image"
-                 class="project-img-placeholder"
+                 alt="Concrete cylinder 7 positioned in the Universal Testing Machine before compression testing"
                  onerror="this.parentElement.classList.add('media-fallback')">
           </div>
           <div class="project-text">
             <h3 class="project-title">Concrete Cylinder Compression Lab</h3>
             <p class="project-meta">EGN-301, UNCW, Spring 2026</p>
-            <p class="project-copy">Tested a concrete cylinder to failure using a Universal Testing Machine (UTM) to determine compressive strength, Young's modulus, and lateral deflection. Processed the exported load-displacement data in Excel to calculate stress-strain relationships and identify the elastic, yield, and ultimate stress regions. Compared the experimental Young's modulus to theoretical concrete values, tracing the gap to the specimen's short 7-day curing time and alignment in the test rig.</p>
+            <p class="project-copy">Tested a concrete cylinder to failure using a Universal Testing Machine (UTM) to determine compressive strength, Young's modulus, and lateral deflection. Processed the exported load-displacement data in Excel to calculate stress-strain relationships and identify the elastic, yield, and ultimate stress regions. The specimen reached a maximum stress of 386.5 psi and an experimental Young's modulus of 903.8 psi, well below the ~3.6&times;10&#8310; psi expected for cured concrete &mdash; a gap traced to the specimen's short 7-day curing time and alignment in the test rig.</p>
             <ul class="project-tags">
               <li>Excel</li>
               <li>Data Analysis</li>
@@ -154,7 +149,7 @@
           <div class="project-text">
             <h3 class="project-title">Beach Nourishment Fill Volume Site Map</h3>
             <p class="project-meta">EGN-220, UNCW, Spring 2026</p>
-            <p class="project-copy">Produced a site map in Civil 3D to support a beach nourishment and dredge fill analysis, modeling proposed fill areas against existing surface data. Applied Civil 3D surface and volume tools to support fill quantity calculations for the nourishment project.</p>
+            <p class="project-copy">Produced a site map in Civil 3D to support a beach nourishment and dredge fill analysis, modeling proposed fill areas against existing surface data. Applied Civil 3D surface and volume tools to support fill quantity calculations for the nourishment project. The analysis calculated a required fill volume of roughly 1,572,000 cu. yd., scaled to approximately 1,808,000 cu. yd. of cut volume after applying a 15% dredging loss factor.</p>
 
             <figure class="project-secondary-media">
               <img src="assets/images/beach-nourishment-site-map.png"
@@ -185,18 +180,22 @@
           <div class="timeline-marker" aria-hidden="true"></div>
           <div class="timeline-content">
             <h3 class="timeline-role">Restaurant Server</h3>
-            <p class="timeline-org">Timberwood Taphouse, Charlottesville, VA</p>
-            <p class="timeline-dates">06/2025 – Present</p>
-            <p class="timeline-copy">Manage multiple concurrent orders in a fast-paced environment, prioritizing tasks accurately under time pressure while communicating clearly with kitchen staff and patrons to ensure efficient service.</p>
+            <p class="timeline-org">Timberwood Taphouse, Charlottesville, VA <span class="timeline-dates-inline">&middot; 06/2025 – Present</span></p>
+            <ul class="timeline-bullets">
+              <li>Manage multiple concurrent orders in a fast-paced environment, prioritizing accurately under time pressure.</li>
+              <li>Communicate clearly with kitchen staff and patrons to keep service running smoothly.</li>
+            </ul>
           </div>
         </li>
         <li class="timeline-item">
           <div class="timeline-marker" aria-hidden="true"></div>
           <div class="timeline-content">
             <h3 class="timeline-role">Cook</h3>
-            <p class="timeline-org">Farmington Country Club, Charlottesville, VA</p>
-            <p class="timeline-dates">06/2023 – 04/2026</p>
-            <p class="timeline-copy">Collaborated with a team of chefs across multiple stations to execute fast-paced, high-volume meal preparation, while monitoring inventory and maintaining a safety-compliant kitchen under consistent time pressure.</p>
+            <p class="timeline-org">Farmington Country Club, Charlottesville, VA <span class="timeline-dates-inline">&middot; 06/2023 – 04/2026</span></p>
+            <ul class="timeline-bullets">
+              <li>Executed fast-paced, high-volume meal prep across multiple stations as part of a coordinated team.</li>
+              <li>Monitored inventory and maintained a safety-compliant kitchen under consistent time pressure.</li>
+            </ul>
           </div>
         </li>
       </ul>

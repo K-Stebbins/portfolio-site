@@ -423,6 +423,25 @@ button:focus-visible {
   color: rgba(255, 255, 255, 0.65);
 }
 
+.feature-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-list li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.feature-list strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /* ==========================================================================
    Projects
    ========================================================================== */
@@ -592,19 +611,19 @@ button:focus-visible {
    ========================================================================== */
 
 .experience {
-  padding: 100px 0;
+  padding: 64px 0;
   background: #fafafa;
 }
 
 .experience .section-heading {
-  font-size: 40px;
-  margin-bottom: 56px;
+  font-size: 30px;
+  margin-bottom: 32px;
 }
 
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
   border-left: 2px solid var(--light-gray);
   padding-left: 40px;
 }
@@ -626,33 +645,41 @@ button:focus-visible {
 }
 
 .timeline-role {
-  font-size: 26px;
+  font-size: 19px;
   font-weight: 800;
   color: var(--near-black);
-  margin: 0 0 6px;
+  margin: 0 0 2px;
 }
 
 .timeline-org {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--coral);
-  margin: 0 0 6px;
+  margin: 0 0 8px;
 }
 
-.timeline-dates {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.timeline-dates-inline {
+  font-weight: 500;
   color: #999999;
-  margin: 0 0 16px;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
-.timeline-copy {
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--body-gray);
+.timeline-bullets {
   margin: 0;
+  padding-left: 18px;
   max-width: 640px;
+  list-style: disc;
+}
+
+.timeline-bullets li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body-gray);
+}
+
+.timeline-bullets li + li {
+  margin-top: 4px;
 }
 
 /* ==========================================================================
