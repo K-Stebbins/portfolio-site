@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concrete Cylinder Compression Lab — Keller Stebbins</title>
+<meta name="description" content="Project breakdown: Concrete Cylinder Compression Lab, EGN-301, UNC Wilmington.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announcement-bar">
+  <span class="announcement-badge">Open to Work</span>
+  <span class="announcement-text">Seeking Summer 2027 internships in coastal &amp; civil engineering.</span>
+</div>
+
+<!-- Main navigation -->
+<header class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 22C5 18 8 18 11 22C14 26 17 26 20 22C23 18 26 18 29 22" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2 15C5 11 8 11 11 15C14 19 17 19 20 15C23 11 26 11 29 15" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.65"/>
+        <path d="M2 8C5 4 8 4 11 8C14 12 17 12 20 8C23 4 26 4 29 8" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+      </svg>
+      <span class="nav-wordmark">Keller Stebbins</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#experience" class="nav-link">Experience</a>
+      <a href="https://linkedin.com/in/keller-stebbins-343327339" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="assets/resume/Keller_Stebbins_Resume.pdf" class="nav-link nav-resume-btn" download>Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="project-detail">
+    <div class="container">
+      <a href="index.html#projects" class="project-back-link">&larr; Back to Projects</a>
+
+      <span class="eyebrow">Project</span>
+      <h1 class="section-heading project-detail-title">Concrete Cylinder Compression Lab</h1>
+      <p class="project-meta project-detail-meta">EGN-301, UNCW, Spring 2026</p>
+
+      <div class="project-detail-media">
+        <!--
+          PLACEHOLDER: Concrete Cylinder Compression Lab media.
+          Replace this placeholder block with your real test photo and
+          stress-strain chart. Suggested filenames:
+            assets/images/concrete-cylinder-test.jpg
+            assets/images/concrete-stress-strain-chart.png
+          Example markup once you have the files:
+            <img src="assets/images/concrete-cylinder-test.jpg"
+                 alt="Concrete cylinder specimen loaded in the Universal Testing Machine before failure">
+            <img src="assets/images/concrete-stress-strain-chart.png"
+                 alt="Stress-strain chart derived from the concrete cylinder compression test data">
+        -->
+        <img src="assets/images/concrete-cylinder-test.jpg"
+             alt="Placeholder for concrete cylinder compression test photo — replace with the real Universal Testing Machine test image"
+             class="project-img-placeholder"
+             onerror="this.parentElement.classList.add('media-fallback')">
+      </div>
+
+      <div class="project-detail-body">
+        <section class="project-detail-section">
+          <h2>Overview</h2>
+          <p>I tested a concrete cylinder to failure on a Universal Testing Machine (UTM) to determine its compressive strength, Young's modulus, and lateral deflection, then compared the experimental results to theoretical values to trace down sources of error.</p>
+        </section>
+
+        <section class="project-detail-section">
+          <h2>Methodology</h2>
+          <p>The cylinder was loaded in compression on the UTM while load and displacement data were recorded and exported for analysis. I processed the load-displacement data in Excel to calculate the stress-strain relationship and identify the elastic, yield, and ultimate stress regions.</p>
+        </section>
+
+        <section class="project-detail-section">
+          <h2>Results &amp; Discussion</h2>
+          <p>The experimental Young's modulus fell short of theoretical concrete values. I traced the gap to the specimen's short 7-day curing time and its alignment in the test rig.</p>
+        </section>
+
+        <ul class="project-tags project-detail-tags">
+          <li>Excel</li>
+          <li>Data Analysis</li>
+          <li>Materials Testing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-wordmark">Keller Stebbins</span>
+    <span class="footer-copyright">&copy; 2026 Keller Stebbins. Charlottesville, VA.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
